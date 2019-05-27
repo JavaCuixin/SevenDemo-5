@@ -1,0 +1,123 @@
+*{
+	   		padding: 0;
+	   		margin: 0;
+	   	}
+	   	.all{
+			width: 100%;
+			height: 100%;
+	   	}
+	   	.all .topBanner{
+			width: 100%;
+			height: 8%;
+			background-color: #ff8288;
+			line-height: 2.3rem;
+			color: #fff;
+			text-align: center;
+	   	}
+	   	.all .topBanner span{
+	   		font-size: 0.85rem;
+	   	}
+	   	.con{
+	   		width: 100%;
+	   		height: 92%;
+	   		background:#fdefe7;
+			overflow: hidden;
+	   	}
+	   	.con .con_main{
+	   		width:92%;
+	   		margin: 0 auto;	
+	   		height: 92%;	
+	   		margin-top: 1.0rem;	
+	   	}
+	   	.con .con_main span{
+	   		font-family: MicrosoftYaHei;
+	   		display: block;
+			font-size:0.75rem;
+			font-weight: normal;
+			font-stretch: normal;
+			line-height: 0.7rem;
+			/*letter-spacing: 3px;*/
+			color: #666666;
+	   	}
+	   	.con .con_main .phone{
+	   		width: 100%;
+	   		height: 1.875rem;
+	   		margin-top:0.825rem;
+			margin-bottom: 1rem;
+	   	}
+	   .con .con_main .phone .number{
+			width: 9.3rem;
+			height: 1.85rem;
+			color: #cccccc;
+			font-family: MicrosoftYaHei;
+			font-size: 0.75rem;
+			font-weight: normal;
+			border: none;
+			border-radius:0.25rem;
+			
+			padding-left:0.45rem ;
+			float: left;
+	   }
+	   .con .con_main .phone .butt{
+			width: 4.6rem;
+			height: 1.6rem;
+			border: none;
+			text-align: center;
+			font-family: MicrosoftYaHei;
+			font-size: 0.75rem;
+			color: #ffffff;
+			font-weight: normal;
+			border-radius:0.25rem;
+			background-color: #ff8288;
+			float: left;
+			margin-left: 0.3rem;
+			margin-top: 0.1rem;
+	   }
+	 	
+		.con .con_main .yzm{
+			width: 100%;
+			height: auto;
+			margin-top:0.825rem;
+		}
+		.con .con_main .yzm .nums{
+			border: none;
+			width: 96%;
+			height: 1.85rem;
+			border-radius: 0.25rem;
+			font-family: MicrosoftYaHei;
+			font-size: 0.75rem	;
+			font-weight: normal;
+			color: #cccccc;
+			padding-left: 0.45rem;
+			margin-bottom: 1.0rem;
+		}
+		.con .con_main .yzm .denglu{
+			width: 100%;
+			height: 2.35rem;
+			text-align: center;
+			line-height: 2.35rem;
+			background-color: #ff8288;
+			color: #ffffff;
+			border: none;
+			border-radius: 0.25rem;
+			font-family: MicrosoftYaHei;
+			font-size: 0.9rem;
+		}
+		.con .con_main .yzm span{
+			display: block;
+			width: 11.425rem;
+			height: 0.575rem;
+			font-family: SimSun;
+			font-size: 0.6rem;
+			font-weight: normal;
+			font-stretch: normal;
+			line-height: 0.9rem;
+			letter-spacing: 0.05rem;
+			color: #ff8288;
+			margin-top: 1.45rem
+		}
+		.yw{
+			color: gray;
+			font-size: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
