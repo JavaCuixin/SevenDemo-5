@@ -1,0 +1,293 @@
+body{
+				margin:0;
+				padding:0;
+				overflow: hidden;
+			}
+			div,span,ul,p{
+				margin:0;
+				padding:0;
+				list-style: none;
+			}
+			.box{
+				width:100%;
+				height: 100%;
+				display: block;
+				position: relative;
+				
+			}
+			.header{
+				width:100%;
+				height:77px;
+				display: flex;
+				line-height: 50px;
+				background:#FF8288;
+			}
+			.header ul{
+				/*border: 1px solid red;*/
+				width: 100%;
+				height: 2rem;
+				float: left;
+				margin-left: 1rem;
+				margin-top: 1rem;
+			}
+			.header ul li{
+				border: 1.5px solid white;
+				width: 0.3rem;
+				height: 0.3rem;
+				float: left;
+				border-radius: 100%;
+				list-style: none;
+				margin-right: 0.2rem;
+				margin-top: -0.3rem;
+			}
+			.header ul .byq{
+				background: white;
+			}
+			.header ul .yw{
+				color: white;
+				font-size: 1rem;
+				margin-left: 0.2rem;
+				margin-top: -1.6rem;
+				float: left;
+			}
+			.header ul .wuxian{
+				width: 20px;
+				height: 20px;
+				float: left;
+				margin-left: -0.5rem;
+				margin-top: -1.4rem;
+			}
+			.wuxian img{
+				width: 100%;
+				height: 100%;
+			}
+			.header ul .sj{
+				color: white;
+				font-size: 1rem;
+				float: left;
+				margin-left: 4.4rem;
+				margin-top: -1.6rem;
+			}
+			.header ul .ly{
+				float: left;
+				width: 20px;
+				height: 20px;
+				margin-left: 17rem;
+				margin-top: -2.8rem;
+			}
+			.ly img{
+				width: 100%;
+				height: 100%;
+			}
+			.header ul .dl{
+				color: white;
+				font-size: 1rem;
+				float: left;
+				margin-left: 18.3rem;
+				margin-top: -3.1rem;
+			}
+			.header ul .dp{
+				width: 30px;
+				height: 20px;
+				float: left;
+				margin-left: 20.5rem;
+				margin-top: -2.9rem;
+			}
+			.dp img{
+				width: 100%;
+				height: 100%;
+			}
+			.header .zhu span{
+				float: left;
+				margin-left: -11.9rem;
+				margin-top: 23px;
+				color: white;
+			}
+			.all a{
+				width: 25px;
+				height: 1.7rem;
+				display: inline-block;
+				/*padding-top:30px;	*/
+				margin-top: 2.4rem;
+				margin-left: -370px;	
+				background: url(../images/logo.png) no-repeat;	
+			}	
+			/*.all a img{
+				width: 100%;
+				height: 100%;
+			}	*/	
+
+			.nav{
+				width:100%;
+				height:100%;
+				background:#FDEEE7 ;
+				padding-top:65px;
+				position: relative;
+				/*transition:all 1s;*/
+			}
+			.one{
+				width:90%;
+				height:100%;
+				margin:0 auto;
+				/* border: 1px solid red; */
+			}
+			.cont{
+				width:100%;
+				height:150px;
+				background: white;
+				border-radius:10px;	
+				margin-top: -2rem;
+				
+			}
+			.conts{
+				width:100%;
+				height:150px;
+				background: url(../images/sy_lianjie.png) no-repeat center ;
+				background-size: 50%;
+				display: flex;
+			
+			}
+			.conts>div:nth-of-type(1){
+				width:50%;
+				height:150px;
+				text-align: center;
+			}
+			.conts>div:nth-of-type(1) .pic{
+				width:100%;
+				height:50px;
+				display: inline-block;
+			}
+			.conts>div:nth-of-type(1) .pics{
+				width:100%;
+				height:50px;
+			}
+			.conts>div:nth-of-type(1) .pics img{
+			 	width:80px;
+				height:80px;
+				border-radius: 50%;
+			}
+			.conts>div:nth-of-type(2){
+				width:50%;
+				height:150px;
+				text-align: center;
+			}
+			.conts>div:nth-of-type(2) .pic{
+				width:100%;
+				height:50px;
+				display: inline-block;
+			}
+			.conts>div:nth-of-type(2) .pics{
+				width:100%;
+				height:50px;
+			}
+			.conts>div:nth-of-type(2) .pics img{
+			 	width:80px;
+				height:80px;
+				border-radius: 50%;
+			}
+			.lo{
+				width:100%;
+				height:140px;
+				margin-top:10px;
+
+			}
+			.img{
+				width:100%;
+				height:140px;
+			}
+			.img img{
+				width:250px;
+				height:120px;
+			}
+			.content{
+				width:100%;
+				height:12.5rem;
+				position: relative;			
+			}
+			.jiao{
+				position: absolute;
+				top:-30px;
+				left: 15px;
+			}
+			.ve{
+				width:100%;
+				height:150px;
+				background: white;
+				padding:10px;
+				box-sizing: border-box;
+				font-size: 2rem;
+			}
+			.time{
+				width:100%;
+				height:50px;
+				margin-top: 0.5rem;
+				text-align: center;
+			}
+			.data{
+				background: #FF8288;
+				border-radius: 10px;
+				width: 15rem;
+				height:2.3rem;
+			}
+			.dingwei{
+				width: 50%;
+				height: 100%;
+				background:url(../images/asideBg.png);
+				position: absolute;
+				top: 5rem;
+				left: -11.75rem;
+				float: left;
+				/*transition:all 1s;*/
+				/*overflow: hidden;*/
+				/*display: none; */
+			}
+			/*.dingwei .sas{
+				width: 100%;
+				height: 50px;
+				background: #FF8288
+				/* border-bottom: 1px solid #cccccc */
+			
+			/*.dingwei .sas img{
+				margin-top: 0.8rem;
+				margin-left:0.4rem;
+			}*/
+			/* .dingwei .asa{
+				width: 98%;
+				height: 2.0rem;
+				border-bottom: 3px solid #cccccc;
+				background-color: #fff;
+				border-radius: 1.25rem;
+			
+			} */
+			.dingwei .asa img{
+				display: inline-block;
+				width: 4rem;
+				height: 4rem;
+				margin:5px 5px 5px 19px;
+				border-bottom: 3px solid #cccccc;
+				background-color: #fff;
+				border-radius: 2.25rem;
+
+			}
+			.dingwei .asa .span{
+				position: absolute;
+				top: 52px;
+				left: 84px;
+			}
+			.dingwei .qwe{
+				/* border: 1px solid red; */
+				margin-top: 1rem;
+			}
+			.dingwei .qwe li a img{
+				width: 40px;
+				height: 40px;
+				margin-bottom: 24px;
+				margin-left: 35px;
+			}
+			.dingwei .qwe div{
+				width: 5.5rem;
+				height: 2.5rem;
+				float: right;
+				margin-top: 10px;
+				margin-right: 10px;
+			}

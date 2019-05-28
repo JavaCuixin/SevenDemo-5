@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+html{
+	height: 100%;
+    overflow-x: hidden;
+}
+body{
+	height: 100%;
+    overflow-x: hidden;
+}
+.all{
+	width: 100%;
+	height: 100%;
+}
+.all .topBanner{
+	width: 100%;
+    height: 12.5%;
+    background-color: #ff8288;
+    line-height: 8.3rem;
+    color: #fff;
+    text-align: center;
+}
+.topBanner ul{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 2rem;
+	float: left;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+.topBanner ul li{
+	border: 1.5px solid white;
+	width: 1rem;
+	height: 1rem;
+	float: left;
+	border-radius: 100%;
+	list-style: none;
+	margin-right: 0.5rem;
+}
+.topBanner ul .byq{
+	background: white;
+}
+.topBanner ul .yw{
+	font-size: 2rem;
+	margin-left: 0.7rem;
+	margin-top: -3.4rem;
+	float: left;
+}
+.topBanner ul .wuxian{
+	float: left;
+	margin-left: 1rem;
+	margin-top: -2.4rem;
+}
+.topBanner ul .sj{
+	font-size: 2rem;
+	float: left;
+	margin-left: 9.4rem;
+	margin-top: -3.4rem;
+}
+.topBanner ul .ly{
+	float: left;
+	margin-left: 12.5rem;
+	margin-top: -2.0rem;
+}
+.topBanner ul .dl{
+	font-size: 2.4rem;
+	float: left;
+	margin-left: 49.5rem;
+	margin-top: -9.5rem;
+}
+.topBanner ul .dp{
+	float: left;
+	margin-left: 54.5rem;
+	margin-top: -8.7rem;
+}
+.all .topBanner .topBanner-one{
+	font-size: 4rem;
+	float: left;	
+	margin-left: 0.5rem;
+}
+.all .topBanner .topBanner-two{
+    font-size: 3.4rem;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+.all .topBanner .topBanner-three{
+    font-size: 3rem;
+    text-decoration: none;
+    float: right;
+    margin-right: 1.9rem;
+    margin-top: 0.7rem;
+    color: white;
+}
+.all .con{
+	width: 100%;
+    height: 92%;
+    background: #FDEEE7;
+    overflow: hidden;
+}
+.con .con_main{
+	/*border: 1px solid red;*/
+	width: 92%;
+    margin: 0 auto;
+    height: 92%;
+    margin-top: 2.0rem;
+}
+.con_main .con_main_one{
+	border: 1px solid white;
+	width: 100%;
+	height: 45%;
+	border-radius: 10px 10px 0 0;
+	background: white;
+}
+.con_main_one .con_main_two{
+	border: 1px solid white;
+	width: 23%;
+	height: 34%;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+.con_main_one .con_main_three{
+	color: pink;
+	font-size: 3rem;
+	margin-right: 34rem;
+	margin-top: -13rem;
+	float: right;
+}
+.con_main_one .con_main_hour{
+	color: #ccc;
+	font-size: 2rem;
+	margin-right: 2rem;
+	margin-top: -13rem;
+	float: right;
+}
+.con_main_one .con_gankai{
+	width: 550px;
+	color: black;
+	font-size: 2rem;
+	margin-right: 5rem;
+	margin-top: -7rem;
+	float: right;
+}
+.con_main_one .con_img{
+	/*border: 1px solid red;*/
+	width: 39%;
+	height: 47%;
+	margin-left: 17rem;
+	margin-top: 2rem;
+}
+.con_img img{
+	width: 100%;
+	height: 100%;
+}

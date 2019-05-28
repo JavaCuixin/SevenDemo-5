@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.stuone{
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+.stuone div{
+    width: 100%;
+    height: 100%;
+
+}
+.stuone div img{
+    width: 100%;
+    height: 100%;
+    display: none;
+
+
+}
+.stuone .imgs img{
+    display: block;
+}
+
+.stuone .stul li{
+    float: left;
+    width: 5px;
+    height: 5px;
+    /* color: red; */
+    border-radius: 50%;
+    padding-left: 10px;
+}
+.stuone .stul{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}

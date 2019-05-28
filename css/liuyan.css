@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+html{
+	height: 100%;
+    overflow-x: hidden;
+}
+body{
+	height: 100%;
+    overflow-x: hidden;
+}
+.all{
+	width: 100%;
+	height: 100%;
+}
+.all .topBanner{
+	width: 100%;
+    height: 12%;
+    background-color: #ff8288;
+    line-height: 8.3rem;
+    color: #fff;
+    text-align: center;
+}
+.topBanner ul{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 2rem;
+	float: left;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+.topBanner ul li{
+	border: 1.5px solid white;
+	width: 1rem;
+	height: 1rem;
+	float: left;
+	border-radius: 100%;
+	list-style: none;
+	margin-right: 0.5rem;
+}
+.topBanner ul .byq{
+	background: white;
+}
+.topBanner ul .yw{
+	font-size: 2rem;
+	margin-left: 0.7rem;
+	margin-top: -3.4rem;
+	float: left;
+}
+.topBanner ul .wuxian{
+	float: left;
+	margin-left: 1rem;
+	margin-top: -2.4rem;
+}
+.topBanner ul .sj{
+	font-size: 2rem;
+	float: left;
+	margin-left: 9.4rem;
+	margin-top: -3.4rem;
+}
+.topBanner ul .ly{
+	float: left;
+	margin-left: 12.5rem;
+	margin-top: -2.0rem;
+}
+.topBanner ul .dl{
+	font-size: 2.4rem;
+	float: left;
+	margin-left: 49.5rem;
+	margin-top: -9.5rem;
+}
+.topBanner ul .dp{
+	float: left;
+	margin-left: 54.5rem;
+	margin-top: -8.7rem;
+}
+.all .topBanner .topBanner-one{
+	font-size: 4rem;
+	float: left;	
+	margin-left: 0.5rem;
+}
+.all .topBanner .topBanner-three{
+    font-size: 2.7rem;
+    text-decoration: none;
+    float: right;
+    margin-right: 1.7rem;
+}
+.all .con{
+	width: 100%;
+    height: 92%;
+    background: #FDEEE7;
+    overflow: hidden;
+}
+.con .con_main{
+	/*border: 1px solid red;*/
+	width: 92%;
+    margin: 0 auto;
+    height: 92%;
+    margin-top: 2.0rem;
+}
+.con_main .con_xbk{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 25%;
+	background: white;
+	border-radius: 10px 10px 0 0;
+}
+.con_main ul{
+	width: 104%;
+	height: 75%;
+}
+.con_main ul li{
+	width: 21.4%;
+	height: 20%;
+	float: left;
+	list-style: none;
+	margin-top: 2rem;
+	margin-right: 2rem;
+}
+.con_main ul li img{
+	width: 100%;
+	height: 100%;
+}
