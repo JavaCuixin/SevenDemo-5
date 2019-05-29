@@ -24,6 +24,7 @@ function settime(val) {
                 // strs=JSON.parse(localStorage.getItem("lastname"))
                 // console.log(strs)
                 timer=setInterval(function(){
+                    window.clearTimeout(timer)
                     settime(val)
                   if(counts == 0) {
                     val.removeAttribute("disabled");
@@ -60,44 +61,44 @@ $(function(){
         if(val==''){
             alert('请输入验证码！');
         }else if(val == num){
-            alert('提交成功！');
-            var numbers=$(".number").val()
+           
+            // var numbers=$("#phone").val()
             // localStorage.lastname(JSON.stringify(numbers))
             $(".nums").val('');
-
-
+            var phones=JSON.parse(localStorage.phone)
+            console.log(phones.phone)
             $.ajax({
-                type:'post',
-                url:"../mvc/index.php?c=Login&a=querys",
+                url:"../mvc/index.php?c=Login&a=login",
+                type:"post",
                 data:{
                     phone:$('#phone').val(),
                 },
-                success:function  (str) {
-                    var str=JSON.parse(str)
+                success:function  (data) {
+                    var str=JSON.parse(data)
                     console.log(str)
-                    if (str.code=='505') {
-                        return
+                    if (str==2) {
+                       $.ajax({
+                            url:'../mvc/index.php?c=Login&a=registers',
+                            type:'post',
+                            data:{
+                                phone:$('#phone').val(),
+                            },
+                            success:function(datas){
+                                var str=JSON.parse(datas)
+                                console.log(str)
+                                if (str.code=='200') {
+                                    alert('注册成功！');
+                                    window.location.href = "../anlian-xiangmu/zhuye.html";
+                                };
+                            }
+                        })
+                    }else if (str==1){
+                         alert('登录成功！');
+                       window.location.href = "../anlian-xiangmu/zhuye.html";
                     }
-                    $.ajax({
-                        type:"post",
-                        url:"../mvc/index.php?c=Login&a=registers",
-                        data:{
-                            phone:$('#phone').val(),
-                        },
-                        success:function  (str) {
-                            console.log(str)
-                        }
-                    })
                 }
             })
-
-
-            
-
-
-
-            window.location.href = "../anlian-xiangmu/zhuye.html";
-            // draw(show_num);
+            // alert('登录成功！');
 
         }else{
             $('.vn').css({display:'block'});

@@ -40,6 +40,7 @@ INSERT INTO `data` VALUES ('1', '', 'lili', '', '../images/boy-1.jpg');
 DROP TABLE IF EXISTS `meges`;
 CREATE TABLE `meges` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `phone` varchar(100) CHARACTER SET utf8 NOT NULL,
   `time` varchar(30) CHARACTER SET utf8 NOT NULL,
   `contentt` varchar(30) CHARACTER SET utf8 NOT NULL,
   `images` varchar(30) CHARACTER SET utf8 NOT NULL,
@@ -50,6 +51,6 @@ CREATE TABLE `meges` (
 -- ----------------------------
 -- Records of kecheng
 -- ----------------------------
-INSERT INTO `meges` VALUES ('1', '2018-09-26', '88787845656','');
+INSERT INTO `meges` VALUES ('1', '','2018-09-26', '88787845656','');
 
 

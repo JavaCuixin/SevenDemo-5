@@ -20,7 +20,6 @@
 			type:'post',
 			data:{
 				phone:phones.phone,
-				// img:$('.asa img').attr('src')
 			},
 			success:function (data) {
 				console.log(data)

@@ -40,7 +40,6 @@ class LoginController{
         }
 
 
-
      public function change(){
             $data = $_POST;
              $phone = $data["phone"];
@@ -57,7 +56,7 @@ class LoginController{
         $old_data= M()->query_sql("SELECT * FROM data WHERE phone='{$phone}'");
         $old_data= current($old_data);
         if (!empty($old_data)) {
-            echo ajax_return("505", "用户名已存在",$old_data);
+            echo ajax_return("505", "用户名已存在", $old_data);
             exit;
         }
     }   
@@ -65,31 +64,35 @@ class LoginController{
     public function query(){
         $data = $_POST;
         $phone = $data["phone"];
-        // $img=$data["img"];
         $old_data= M()->query_sql("SELECT * FROM data WHERE phone='{$phone}'");
         $old_data=current($old_data);
         if (!empty($old_data)) {
-            echo ajax_return("505", "用户名已存在",$old_data);
+            echo ajax_return("505", "用户名已存在", $old_data);
             exit;
         }
     }
 
-    
+    // public function xinwen(){
+    //     $data = $_POST;
+    //     $old_data1 = M()->query_sql("SELECT * FROM meges ORDER BY ID DESC");
+    //     $counta=count($old_data1);
+    //     echo ajax_return($counta,'',$old_data1);
+    // }
 
     /*
      * 登录方法
      */
     public function login(){
             $data = $_POST;
-            $email = $data["email"];
-            $password = $data["password"];
-            $old_data = M()->query_sql("SELECT * FROM user WHERE email='{$email}'");
+            $phone = $data["phone"];
+            // $password = $data["password"];
+            $old_data = M()->query_sql("SELECT * FROM data WHERE phone='{$phone}'");
             $old_data = current($old_data);
             if (empty($old_data)) {
                 echo '2';
             }
             else{
-                if ($password!== $old_data['password']) {
+                if ($phone!== $old_data['phone']) {
                     echo '0';
                 } else {
                     echo '1';
@@ -97,7 +100,31 @@ class LoginController{
             }
                 
         }
-
+    // public function login(){
+    //     //if(IS_AJAX) {
+    //         //p($_SERVER);die;
+    //         //sleep(10);
+    //         $data = $_POST;
+    //         $phone = $data["phone"];
+    //         // $password = $data["password"];
+    //         //p($data);
+    //         $old_data = M()->query_sql("SELECT * FROM data WHERE phone='{$phone}'");
+    //         //p($old_data);
+    //         $old_data = current($old_data);
+    //         //p($old_data);
+    //         if (empty($old_data)) {
+    //             echo ajax_return("505", "用户名不存在", "");
+    //         } else {
+    //             $new_password=$this->verify($password);
+    //             if ($new_password !== $old_data['password']) {
+    //                 echo ajax_return("403", "密码不正确", "");
+    //             } else {
+    //                 session_start();
+    //                 $_SESSION["phone"] = $phone;
+    //                 echo ajax_return("200", "登录成功", $phone);
+    //             }
+    //         }
+    //     }
     // 插入
      public function insertke(){
         $data = $_POST;

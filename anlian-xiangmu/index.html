@@ -28,7 +28,7 @@
                     <input type="button" value="获取验证码" class="butt" id="btnn" onclick="settime(this);">
                 </div>
                 <div class="shows">
-					<p style="display: none;" class="yes">您的验证码正在发送到您的手机，请耐心等待...</p>
+					<p style="display: none;" class="yes">您的验证码正在生成，请耐心等待...</p>
                     <p style="display: none" class="no">您输入的手机号有误，请重新输入!</p>
 				</div>
                 <span>请输入验证码</span>
@@ -44,7 +44,11 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span></div>
     </div>
 </body>
 </html>
@@ -58,5 +62,5 @@
         paginationClickable: true,
         spaceBetween: 30,
     });
-    
+    $('.swiper-pagination-bullet').hide()
 </script>
